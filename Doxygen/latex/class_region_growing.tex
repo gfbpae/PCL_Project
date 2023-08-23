@@ -1,0 +1,150 @@
+\hypertarget{class_region_growing}{}\doxysection{Region\+Growing Class Reference}
+\label{class_region_growing}\index{RegionGrowing@{RegionGrowing}}
+
+
+{\ttfamily \#include $<$Region\+Growing.\+h$>$}
+
+Inheritance diagram for Region\+Growing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_region_growing}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_region_growing_a461974cbf0731d821c2a54f40b397bfa}{Region\+Growing}} ()
+\item 
+\mbox{\hyperlink{class_region_growing_ad6c76432c8e74e23a9fdb00e29bb05a9}{$\sim$\+Region\+Growing}} ()
+\item 
+pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \& \mbox{\hyperlink{class_region_growing_a3904ec33b6526a872a1e5e78cbe85505}{rg\+\_\+segment\+\_\+method}} (pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \&)
+\item 
+void \mbox{\hyperlink{class_region_growing_a65f11a54c38416945533d1c9d8882ef1}{estimator}} (pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \&)
+\item 
+void \mbox{\hyperlink{class_region_growing_a5068a349d144f4fde785d7b8ed5311da}{filter}} (pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \&)
+\item 
+void \mbox{\hyperlink{class_region_growing_ad99feae7b38ab540ac798cf349c2c22b}{rg\+\_\+set}} (pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_segmentation}{Segmentation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_segmentation_a966891da37798baabb99bf0144d47675}{Segmentation}} ()
+\item 
+\mbox{\hyperlink{class_segmentation_ab346c55c2cc6c6269929ac065c5eb44a}{$\sim$\+Segmentation}} ()
+\item 
+void \mbox{\hyperlink{class_segmentation_a17f24e9302f9b63d6f3a17cc2835e0ff}{Colorized}} (pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \&)
+\item 
+\mbox{\Hypertarget{class_segmentation_aa8d1dc19f670e56d2475adde67e7decb}\label{class_segmentation_aa8d1dc19f670e56d2475adde67e7decb}} 
+void {\bfseries Clustering} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pcl\+::\+Region\+Growing$<$ pcl\+::\+Point\+XYZRGB, pcl\+::\+Normal $>$ \mbox{\hyperlink{class_region_growing_a2fdce97d572f33e320d6fa17c280d275}{reg\+\_\+grow}}
+\item 
+pcl\+::search\+::\+Search$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \mbox{\hyperlink{class_region_growing_a9f3227fe7e85c70d0b9017f9d91aeda1}{tree}}
+\item 
+pcl\+::\+Point\+Cloud$<$ pcl\+::\+Normal $>$\+::\+Ptr \mbox{\hyperlink{class_region_growing_a7dda9a81d89b376253155bb39d5f2a26}{normals}}
+\item 
+pcl\+::\+Normal\+Estimation$<$ pcl\+::\+Point\+XYZRGB, pcl\+::\+Normal $>$ \mbox{\hyperlink{class_region_growing_a2c5403629a62193675c8a0a16f4e028b}{normal\+\_\+estimator}}
+\item 
+\mbox{\Hypertarget{class_region_growing_a2116f0af26131acd8140b7a768b47283}\label{class_region_growing_a2116f0af26131acd8140b7a768b47283}} 
+pcl\+::\+Indices\+Ptr {\bfseries indices}
+\item 
+\mbox{\Hypertarget{class_region_growing_a00a7a5be9b6f13c66e16a453fbc41d37}\label{class_region_growing_a00a7a5be9b6f13c66e16a453fbc41d37}} 
+pcl\+::\+Pass\+Through$<$ pcl\+::\+Point\+XYZRGB $>$ {\bfseries pass}
+\item 
+std\+::vector$<$ pcl\+::\+Point\+Indices $>$ \mbox{\hyperlink{class_region_growing_a27037b350ecea8682f013ac80fc9e2fb}{clusters}}
+\item 
+pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \mbox{\hyperlink{class_region_growing_a0f4e538be4865e88d751c17293b9491d}{colored\+\_\+cloud}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_region_growing}{Region\+Growing}} Class =\texorpdfstring{$>$}{>} Region Growing segmentation is applied to the point cloud. It is derived from \mbox{\hyperlink{class_segmentation}{Segmentation}} Class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_region_growing_a461974cbf0731d821c2a54f40b397bfa}\label{class_region_growing_a461974cbf0731d821c2a54f40b397bfa}} 
+\index{RegionGrowing@{RegionGrowing}!RegionGrowing@{RegionGrowing}}
+\index{RegionGrowing@{RegionGrowing}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{RegionGrowing()}{RegionGrowing()}}
+{\footnotesize\ttfamily Region\+Growing\+::\+Region\+Growing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Empty Constructor Initialize tree, normals, indices, colored\+\_\+cloud variables using initializer list \mbox{\Hypertarget{class_region_growing_ad6c76432c8e74e23a9fdb00e29bb05a9}\label{class_region_growing_ad6c76432c8e74e23a9fdb00e29bb05a9}} 
+\index{RegionGrowing@{RegionGrowing}!````~RegionGrowing@{$\sim$RegionGrowing}}
+\index{````~RegionGrowing@{$\sim$RegionGrowing}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{$\sim$RegionGrowing()}{~RegionGrowing()}}
+{\footnotesize\ttfamily Region\+Growing\+::$\sim$\+Region\+Growing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_region_growing_a65f11a54c38416945533d1c9d8882ef1}\label{class_region_growing_a65f11a54c38416945533d1c9d8882ef1}} 
+\index{RegionGrowing@{RegionGrowing}!estimator@{estimator}}
+\index{estimator@{estimator}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{estimator()}{estimator()}}
+{\footnotesize\ttfamily void Region\+Growing\+::estimator (\begin{DoxyParamCaption}\item[{pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \&}]{x }\end{DoxyParamCaption})}
+
+To Set estimator default settings \mbox{\Hypertarget{class_region_growing_a5068a349d144f4fde785d7b8ed5311da}\label{class_region_growing_a5068a349d144f4fde785d7b8ed5311da}} 
+\index{RegionGrowing@{RegionGrowing}!filter@{filter}}
+\index{filter@{filter}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily void Region\+Growing\+::filter (\begin{DoxyParamCaption}\item[{pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \&}]{x }\end{DoxyParamCaption})}
+
+To set filter default settings \mbox{\Hypertarget{class_region_growing_a3904ec33b6526a872a1e5e78cbe85505}\label{class_region_growing_a3904ec33b6526a872a1e5e78cbe85505}} 
+\index{RegionGrowing@{RegionGrowing}!rg\_segment\_method@{rg\_segment\_method}}
+\index{rg\_segment\_method@{rg\_segment\_method}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{rg\_segment\_method()}{rg\_segment\_method()}}
+{\footnotesize\ttfamily pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \& Region\+Growing\+::rg\+\_\+segment\+\_\+method (\begin{DoxyParamCaption}\item[{pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \&}]{cloud }\end{DoxyParamCaption})}
+
+Function used to do region growing segmentation Takes Ptr of Point\+Cloud that is store Point\+XYZRGB to first cloud then returns finale colored\+\_\+cloud that in type Ptr of Point\+Cloud that is store Point\+XYZRGB \mbox{\Hypertarget{class_region_growing_ad99feae7b38ab540ac798cf349c2c22b}\label{class_region_growing_ad99feae7b38ab540ac798cf349c2c22b}} 
+\index{RegionGrowing@{RegionGrowing}!rg\_set@{rg\_set}}
+\index{rg\_set@{rg\_set}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{rg\_set()}{rg\_set()}}
+{\footnotesize\ttfamily void Region\+Growing\+::rg\+\_\+set (\begin{DoxyParamCaption}\item[{pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+XYZRGB $>$\+::\+Ptr \&}]{x }\end{DoxyParamCaption})}
+
+To set the necessary settings as default for region growing 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_region_growing_a27037b350ecea8682f013ac80fc9e2fb}\label{class_region_growing_a27037b350ecea8682f013ac80fc9e2fb}} 
+\index{RegionGrowing@{RegionGrowing}!clusters@{clusters}}
+\index{clusters@{clusters}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{clusters}{clusters}}
+{\footnotesize\ttfamily std\+::vector$<$pcl\+::\+Point\+Indices$>$ Region\+Growing\+::clusters\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds a segmented Point\+Indices \mbox{\Hypertarget{class_region_growing_a0f4e538be4865e88d751c17293b9491d}\label{class_region_growing_a0f4e538be4865e88d751c17293b9491d}} 
+\index{RegionGrowing@{RegionGrowing}!colored\_cloud@{colored\_cloud}}
+\index{colored\_cloud@{colored\_cloud}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{colored\_cloud}{colored\_cloud}}
+{\footnotesize\ttfamily pcl\+::\+Point\+Cloud$<$pcl\+::\+Point\+XYZRGB$>$\+::\+Ptr Region\+Growing\+::colored\+\_\+cloud\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds a segmented and colored Point\+Cloud\textquotesingle{}s Ptr \mbox{\Hypertarget{class_region_growing_a2c5403629a62193675c8a0a16f4e028b}\label{class_region_growing_a2c5403629a62193675c8a0a16f4e028b}} 
+\index{RegionGrowing@{RegionGrowing}!normal\_estimator@{normal\_estimator}}
+\index{normal\_estimator@{normal\_estimator}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{normal\_estimator}{normal\_estimator}}
+{\footnotesize\ttfamily pcl\+::\+Normal\+Estimation$<$pcl\+::\+Point\+XYZRGB, pcl\+::\+Normal$>$ Region\+Growing\+::normal\+\_\+estimator\hspace{0.3cm}{\ttfamily [protected]}}
+
+To compute normals, normal\+\_\+estimator object is created from Normal\+Estimation Class \mbox{\Hypertarget{class_region_growing_a7dda9a81d89b376253155bb39d5f2a26}\label{class_region_growing_a7dda9a81d89b376253155bb39d5f2a26}} 
+\index{RegionGrowing@{RegionGrowing}!normals@{normals}}
+\index{normals@{normals}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{normals}{normals}}
+{\footnotesize\ttfamily pcl\+::\+Point\+Cloud$<$pcl\+::\+Normal$>$\+::\+Ptr Region\+Growing\+::normals\hspace{0.3cm}{\ttfamily [protected]}}
+
+Region Growing algorithm requires normals \mbox{\Hypertarget{class_region_growing_a2fdce97d572f33e320d6fa17c280d275}\label{class_region_growing_a2fdce97d572f33e320d6fa17c280d275}} 
+\index{RegionGrowing@{RegionGrowing}!reg\_grow@{reg\_grow}}
+\index{reg\_grow@{reg\_grow}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{reg\_grow}{reg\_grow}}
+{\footnotesize\ttfamily pcl\+::\+Region\+Growing$<$pcl\+::\+Point\+XYZRGB, pcl\+::\+Normal$>$ Region\+Growing\+::reg\+\_\+grow\hspace{0.3cm}{\ttfamily [protected]}}
+
+In order to perform region growing segmentation, reg\+\_\+grow object is created from the \mbox{\hyperlink{class_region_growing}{Region\+Growing}} class. \mbox{\Hypertarget{class_region_growing_a9f3227fe7e85c70d0b9017f9d91aeda1}\label{class_region_growing_a9f3227fe7e85c70d0b9017f9d91aeda1}} 
+\index{RegionGrowing@{RegionGrowing}!tree@{tree}}
+\index{tree@{tree}!RegionGrowing@{RegionGrowing}}
+\doxysubsubsection{\texorpdfstring{tree}{tree}}
+{\footnotesize\ttfamily pcl\+::search\+::\+Search$<$pcl\+::\+Point\+XYZRGB$>$\+::\+Ptr Region\+Growing\+::tree\hspace{0.3cm}{\ttfamily [protected]}}
+
+Search algorithm used to find the closest points so tree Ptr object is created from Search Class 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hrndr/\+Desktop/\+PCL/\+PCLProjects/\+Cloud\+Viewer/Region\+Growing.\+h\item 
+C\+:/\+Users/hrndr/\+Desktop/\+PCL/\+PCLProjects/\+Cloud\+Viewer/Region\+Growing.\+cpp\end{DoxyCompactItemize}

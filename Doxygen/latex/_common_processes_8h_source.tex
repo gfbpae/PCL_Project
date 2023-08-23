@@ -1,0 +1,42 @@
+\hypertarget{_common_processes_8h_source}{}\doxysection{C\+:/\+Users/hrndr/\+Desktop/\+PCL/\+PCLProjects/\+Cloud\+Viewer/\+Common\+Processes.h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COMMONPROCESSES\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COMMONPROCESSES\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <pcl/io/pcd\_io.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <pcl/point\_types.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <pcl/point\_cloud.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <pcl/common/transforms.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <pcl/filters/random\_sample.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <pcl/visualization/cloud\_viewer.h>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}RANSAC.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}CommonProcesses.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}RegionGrowing.h"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_common_processes}{CommonProcesses}}\ }
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_common_processes_ae8d608623a6e580c208af289cfd9776a}{CommonProcesses}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_common_processes_aa9b88d7eaf4085e7fac0e400c7994693}{\string~CommonProcesses}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_ae0a4ef940602d6ff32ff639b2b66706a}{ReadData}}(\textcolor{keywordtype}{string},\ pcl::PointCloud<pcl::PointXYZRGB>::Ptr\&);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_a8b561dfb2eee8d239d2717f61307564e}{PCDViewer}}(pcl::PointCloud<pcl::PointXYZRGB>::Ptr\&\ ,\textcolor{keywordtype}{string}\ );}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_a3feb72a02305f5b6227f0f929076bd38}{ScalePCD}}(pcl::PointCloud<pcl::PointXYZRGB>::Ptr\&,\textcolor{keywordtype}{double}\ x\_s=1,\textcolor{keywordtype}{double}\ y\_s=1,\textcolor{keywordtype}{double}\ z\_s=1);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ pcl::PointCloud\ <pcl::PointXYZRGB>::Ptr\&\ \mbox{\hyperlink{class_common_processes_a87b5a5b84d1f32ec3c8c573f2de053ca}{getRGBCloud}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ pcl::PointCloud\ <pcl::PointXYZRGB>::Ptr\&\ \mbox{\hyperlink{class_common_processes_ad42045b645bafff77a802765937580da}{getCloud}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_a3f6eea3c59f2818cb090e3881cee77e1}{setRGBCloud}}(pcl::PointCloud\ <pcl::PointXYZRGB>::Ptr\&);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_a52d03a579eefec570d50887ae27c9666}{setCloud}}(pcl::PointCloud\ <pcl::PointXYZRGB>::Ptr\&);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_ae8dc888122773f79515b8e9b9a21c1b6}{saveFile}}(\textcolor{keywordtype}{string},\ pcl::PointCloud<pcl::PointXYZRGB>::Ptr\&)\textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ pcl::PointCloud<pcl::PointXYZRGB>::Ptr\ \mbox{\hyperlink{class_common_processes_a83a7b315bb3adc4e1d6da34f72e0e3f3}{cloud}};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ pcl::PointCloud<pcl::PointXYZRGB>::Ptr\ \mbox{\hyperlink{class_common_processes_aa6830b63ff6e09f0cb08db2e928fd4fd}{cloud\_rgb}};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
